@@ -4,3 +4,40 @@
     outline: 0;
     box-sizing: border-box;
 }
+body{
+    background: #F5F8FF;
+}
+.header-content{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+ nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    list-style-type:  none;
+ }
+ a{
+    text-decoration: none;
+ }
+ nav ul li a{
+    color: #8987A1;
+    font-size: 20px;
+    vertical-align: middle;
+ }
+ 
+.cartImage{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    
+    width: auto;
+}
+nav ul li a:hover{
+    color: black;
+}
+.cart a{
+    color: black;
+}
