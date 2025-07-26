@@ -139,16 +139,17 @@ nav ul li a:hover{
     gap: 100px;
 }
 .plant-text h2{
-    font-size: 80px;
+    font-size: 68px;
     font-weight: 700;
     color: #000000;
 }
 .plant-text ul li{
     color: rgba(0, 0, 0, 0.507);
     font-size: 22px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     line-height: 30px;
+    list-style-type: disc;
 }
 .plant-image{
     position: relative;
@@ -184,13 +185,12 @@ nav ul li a:hover{
     font-size: 20px;
     color: rgba(0, 0, 0, 0.501);
     font-weight: 400;
-    width: 50%;
-    margin: auto;
+    text-align: center;
     line-height: 30px;
 }
 /* Join Section */
 .join-section{
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: 100px;
     background: url(../assets/news-letter-bg.png);
     padding-top: 100px;
@@ -232,4 +232,81 @@ nav ul li a:hover{
     border: none;
     outline: none;
     cursor: pointer;
+}
+/* footer Section */
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+   
+   
+}
+
+.footer-links ul li{
+    color: #6B7280;
+    font-size: 20px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    line-height: 30px;
+}
+.footer-links ul li:hover{
+    color: black;
+}
+.footer-social ul li{
+    display: inline-block;
+    margin-right: 20px;
+    list-style-type: none;
+}
+.footer-logo p{
+    width: 300px;
+    font-size: 22px;
+    color: #6B7280;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 35px;
+}
+@media screen and (max-width: 768px) {
+    .plants-grid {
+        grid-template-columns: auto auto;
+    }
+    .plant-item img {
+        width: 100%;
+        height: auto;
+    }
+    .plant-section-text p {
+        width: 90%;
+    }
+    .join-form input {
+        width: 100%;
+    }
+    .join-form button {
+        width: 100%;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .badge {
+       display: none;
+    } 
+    .plant {
+        grid-template-columns: 1fr;
+    }  
+    
+    
+    nav ul li{
+        visibility: hidden;
+    }
+     .logo{
+        display: inline-block;
+     }
+     .cart{
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+        width: auto;
+        visibility: visible;
+        float: right;
+    }
+   
 }
