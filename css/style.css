@@ -4,15 +4,18 @@
     outline: 0;
     box-sizing: border-box;
 }
-body{
-    background: #F5F8FF;
-}
+
+
+/* Navbar */
 .header-content{
     
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+nav{
+    margin-top: 20px;
 }
  nav ul li{
     display: inline-block;
@@ -40,4 +43,193 @@ nav ul li a:hover{
 }
 .cart a{
     color: black;
+}
+/* Banner */
+.banner{
+   margin-top: 100px
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.fresh{
+    color: #E95A08;
+}
+.banner-text h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner-text p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.501);
+    margin-top: 20px;
+}
+
+/* Plants Section */
+.plants-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns:auto auto auto auto;
+}
+.plant-item {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.plant-item img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.plant-section-text{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.plant-section-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+
+}
+.plant-section-text p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.501);
+    font-weight: 400;
+    width: 50%;
+    margin: auto;
+    line-height: 30px;
+}
+.plant-description{
+    text-align: center;
+    margin-top: 20px;   
+}
+.addTocard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    background: #E95A08;
+    padding: 20px 10px;
+    
+}
+.addTocard a{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.plant-description h3, .plant-description p{
+    color: #111111;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.plant{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: center;
+   
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 100px;
+}
+.plant-text h2{
+    font-size: 80px;
+    font-weight: 700;
+    color: #000000;
+}
+.plant-text ul li{
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 22px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 30px;
+}
+.plant-image{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+   
+
+}
+.badge img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.deal-title{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.deal-title h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+
+}
+.deal-title p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.501);
+    font-weight: 400;
+    width: 50%;
+    margin: auto;
+    line-height: 30px;
+}
+/* Join Section */
+.join-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: url(../assets/news-letter-bg.png);
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+.join-text{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.join-text h2{
+    font-size: 50px;
+    font-weight: 700; 
+    color: white;  
+}
+.join-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-form input{
+    width: 800px;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.join-form button{
+    width: 200px;
+    height: 50px;
+    background: #E95A08;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
